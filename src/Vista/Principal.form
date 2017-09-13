@@ -13,6 +13,9 @@
               <Image iconType="3" name="/Iconos/icons8-Casa-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="INICIO"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu1MouseClicked"/>
@@ -24,6 +27,9 @@
               <Image iconType="3" name="/Iconos/icons8-Grupos de usuarios-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="SOCIOS"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
+            </Property>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
@@ -32,6 +38,9 @@
               <Image iconType="3" name="/Iconos/icons8-Coraz&#xf3;n con pulso-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ACTIVIDADES"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
+            </Property>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu4">
@@ -40,6 +49,9 @@
               <Image iconType="3" name="/Iconos/icons8-Carrito de la compra cargado-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="PRODUCTO"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
+            </Property>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu5">
@@ -48,6 +60,9 @@
               <Image iconType="3" name="/Iconos/icons8-A&#xf1;adir grupo de usuarios Hombre Hombre-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ADMIN/USUA"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
+            </Property>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu6">
@@ -56,17 +71,10 @@
               <Image iconType="3" name="/Iconos/icons8-Contabilidad-64.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="REPORTES"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="btnMenu">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Iconos/icons8-Men&#xfa;-64.png"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Verdana" size="12" style="0"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMenuMouseClicked"/>
-          </Events>
         </Menu>
       </SubComponents>
     </Menu>
@@ -109,38 +117,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
-                  <Component id="btnMenu2" min="-2" pref="58" max="-2" attributes="0"/>
-                  <EmptySpace pref="598" max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="821" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="btnMenu2" min="-2" pref="12" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="319" max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="331" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JButton" name="btnMenu2">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-            <Property name="contentAreaFilled" type="boolean" value="false"/>
-            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-              <Color id="Cursor de Mano"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenu2ActionPerformed"/>
-          </Events>
-        </Component>
-      </SubComponents>
     </Container>
   </SubComponents>
 </Form>

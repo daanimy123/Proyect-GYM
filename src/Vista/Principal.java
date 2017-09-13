@@ -32,7 +32,6 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         escritorio = new javax.swing.JDesktopPane();
-        btnMenu2 = new javax.swing.JButton();
         Menu = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -40,40 +39,24 @@ public class Principal extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
-        btnMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        btnMenu2.setBorder(null);
-        btnMenu2.setContentAreaFilled(false);
-        btnMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnMenu2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMenu2ActionPerformed(evt);
-            }
-        });
-
-        escritorio.setLayer(btnMenu2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(223, 223, 223)
-                .addComponent(btnMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(598, Short.MAX_VALUE))
+            .addGap(0, 821, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(escritorioLayout.createSequentialGroup()
-                .addComponent(btnMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 319, Short.MAX_VALUE))
+            .addGap(0, 331, Short.MAX_VALUE)
         );
 
         jMenu1.setBorder(null);
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Casa-64.png"))); // NOI18N
         jMenu1.setText("INICIO");
+        jMenu1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu1MouseClicked(evt);
@@ -83,31 +66,28 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Grupos de usuarios-64.png"))); // NOI18N
         jMenu2.setText("SOCIOS");
+        jMenu2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         Menu.add(jMenu2);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Corazón con pulso-64.png"))); // NOI18N
         jMenu3.setText("ACTIVIDADES");
+        jMenu3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         Menu.add(jMenu3);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Carrito de la compra cargado-64.png"))); // NOI18N
         jMenu4.setText("PRODUCTO");
+        jMenu4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         Menu.add(jMenu4);
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Añadir grupo de usuarios Hombre Hombre-64.png"))); // NOI18N
         jMenu5.setText("ADMIN/USUA");
+        jMenu5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         Menu.add(jMenu5);
 
         jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Contabilidad-64.png"))); // NOI18N
         jMenu6.setText("REPORTES");
+        jMenu6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         Menu.add(jMenu6);
-
-        btnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Menú-64.png"))); // NOI18N
-        btnMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnMenuMouseClicked(evt);
-            }
-        });
-        Menu.add(btnMenu);
 
         setJMenuBar(Menu);
 
@@ -124,21 +104,6 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMenuMouseClicked
-     int posicion = btnMenu2.getX();
-        if(posicion > 5){
-            Animacion.Animacion.mover_izquierda(211, 5, 2, 2, btnMenu2);
-            Animacion.Animacion.mover_izquierda(5, -835, 2, 2, Menu);
-        }else{
-            Animacion.Animacion.mover_derecha(5, 210, 2, 2, btnMenu2);
-            Animacion.Animacion.mover_derecha(-835, 5, 2, 2, Menu);
-        }  
-    }//GEN-LAST:event_btnMenuMouseClicked
-
-    private void btnMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ActionPerformed
-
-    }//GEN-LAST:event_btnMenu2ActionPerformed
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
         Inicio n= new Inicio();
@@ -183,8 +148,6 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar Menu;
-    private javax.swing.JMenu btnMenu;
-    private javax.swing.JButton btnMenu2;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;

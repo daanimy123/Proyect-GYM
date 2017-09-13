@@ -45,10 +45,11 @@ public class Login extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(51, 255, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Usuario hombre verificado-64.png"))); // NOI18N
         jLabel1.setText("       Usuario:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -61,6 +62,7 @@ public class Login extends javax.swing.JDialog {
         jPanel1.add(jLabel1, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8-Bloquear-64 (1).png"))); // NOI18N
         jLabel2.setText("Contraseña:");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -127,7 +129,6 @@ public class Login extends javax.swing.JDialog {
         String pass = new String (Contrasena.getPassword());
         if(user.equals("Daniel") && pass.equals("")){
         this.dispose();
-        JOptionPane.showMessageDialog(null,"Bienvenido ");
         new Principal().setVisible(true);
         }else{
         JOptionPane.showMessageDialog(null, "Acceso Denegado:\n"+"Por favor ingresa un usuario y/o contraseña correctos","Acceso denegado",JOptionPane.ERROR_MESSAGE);
