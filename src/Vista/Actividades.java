@@ -9,12 +9,12 @@ package Vista;
  *
  * @author danie
  */
-public class Inicio extends javax.swing.JInternalFrame {
+public class Actividades extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form Inicio
+     * Creates new form Actividades
      */
-    public Inicio() {
+    public Actividades() {
         initComponents();
     }
 
@@ -31,11 +31,11 @@ public class Inicio extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
+            .addGap(0, 394, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+            .addGap(0, 274, Short.MAX_VALUE)
         );
 
         pack();
