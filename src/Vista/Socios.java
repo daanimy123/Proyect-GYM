@@ -28,62 +28,597 @@ public class Socios extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        pnlsocios = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        txtclave = new javax.swing.JTextField();
+        txtnombre = new javax.swing.JTextField();
+        txtapellidos = new javax.swing.JTextField();
+        txtedad = new javax.swing.JTextField();
+        txtdireccion = new javax.swing.JTextField();
+        txttelefono = new javax.swing.JTextField();
+        lblcamara = new javax.swing.JLabel();
+        lblcapturar = new javax.swing.JLabel();
+        lblfoto = new javax.swing.JLabel();
+        btnsiguiente = new javax.swing.JButton();
+        rdoactivo = new javax.swing.JRadioButton();
+        rdoinactivo = new javax.swing.JRadioButton();
+        rdohombre = new javax.swing.JRadioButton();
+        rdomujer = new javax.swing.JRadioButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        pnlsocios1 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        cbolista = new javax.swing.JComboBox<>();
+        btnbuscar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tbllista = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
+        membresia = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        txttoal = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        txtpago = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        txtdescuento = new javax.swing.JTextField();
+        asistencias = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jSeparator4 = new javax.swing.JSeparator();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel43 = new javax.swing.JLabel();
+        txtsocio = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
-        jTextField3.setText("jTextField3");
+        setMinimumSize(new java.awt.Dimension(865, 500));
+        setPreferredSize(new java.awt.Dimension(865, 500));
 
-        jTextField4.setText("jTextField4");
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new java.awt.CardLayout());
 
-        jTextField5.setText("jTextField5");
+        pnlsocios.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTextField6.setText("jTextField6");
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.setLayout(null);
 
-        jTextField7.setText("jTextField7");
+        jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Clave: ");
+        jPanel3.add(jLabel1);
+        jLabel1.setBounds(47, 72, 120, 36);
 
-        jTextField8.setText("jTextField8");
+        jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Nombre: ");
+        jPanel3.add(jLabel2);
+        jLabel2.setBounds(47, 126, 120, 36);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(44, 44, 44)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(119, 119, 119)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(53, 53, 53)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(70, 70, 70)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(124, Short.MAX_VALUE))
+        jLabel3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Apellidos: ");
+        jPanel3.add(jLabel3);
+        jLabel3.setBounds(47, 181, 120, 36);
+
+        jLabel4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setText("Edad: ");
+        jPanel3.add(jLabel4);
+        jLabel4.setBounds(47, 236, 120, 35);
+
+        jLabel5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("Sexo: ");
+        jPanel3.add(jLabel5);
+        jLabel5.setBounds(47, 290, 120, 36);
+
+        jLabel6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel6.setText("Dirección: ");
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(47, 345, 120, 36);
+
+        jLabel7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("Telefono: ");
+        jPanel3.add(jLabel7);
+        jLabel7.setBounds(47, 400, 120, 36);
+
+        jLabel8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("Fecha: Ingreso: ");
+        jPanel3.add(jLabel8);
+        jLabel8.setBounds(47, 455, 120, 36);
+
+        jLabel9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel9.setText("Estado: ");
+        jPanel3.add(jLabel9);
+        jLabel9.setBounds(47, 510, 120, 36);
+
+        txtclave.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txtclave);
+        txtclave.setBounds(185, 72, 160, 36);
+
+        txtnombre.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txtnombre);
+        txtnombre.setBounds(185, 127, 160, 36);
+
+        txtapellidos.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txtapellidos);
+        txtapellidos.setBounds(185, 182, 160, 36);
+
+        txtedad.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txtedad);
+        txtedad.setBounds(185, 237, 160, 35);
+
+        txtdireccion.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txtdireccion);
+        txtdireccion.setBounds(185, 346, 160, 36);
+
+        txttelefono.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel3.add(txttelefono);
+        txttelefono.setBounds(185, 401, 160, 36);
+
+        lblcamara.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblcamara.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblcamara.setText("Camara");
+        lblcamara.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(lblcamara);
+        lblcamara.setBounds(390, 110, 260, 220);
+
+        lblcapturar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblcapturar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblcapturar.setText("Capturar");
+        lblcapturar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(lblcapturar);
+        lblcapturar.setBounds(550, 370, 100, 40);
+
+        lblfoto.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        lblfoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblfoto.setText("Tomar Foto");
+        lblfoto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(lblfoto);
+        lblfoto.setBounds(390, 370, 100, 40);
+
+        btnsiguiente.setBackground(new java.awt.Color(0, 153, 255));
+        btnsiguiente.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        btnsiguiente.setText("Siguiente");
+        btnsiguiente.setToolTipText("Siguiente");
+        btnsiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(btnsiguiente);
+        btnsiguiente.setBounds(523, 473, 130, 50);
+
+        rdoactivo.setBackground(new java.awt.Color(255, 255, 255));
+        rdoactivo.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        rdoactivo.setText("Activo");
+        jPanel3.add(rdoactivo);
+        rdoactivo.setBounds(190, 510, 75, 36);
+
+        rdoinactivo.setBackground(new java.awt.Color(255, 255, 255));
+        rdoinactivo.setText("Innactivo");
+        jPanel3.add(rdoinactivo);
+        rdoinactivo.setBounds(270, 510, 75, 36);
+
+        rdohombre.setBackground(new java.awt.Color(255, 255, 255));
+        rdohombre.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        rdohombre.setText("Hombre");
+        jPanel3.add(rdohombre);
+        rdohombre.setBounds(190, 290, 75, 36);
+
+        rdomujer.setBackground(new java.awt.Color(255, 255, 255));
+        rdomujer.setText("Mujer");
+        jPanel3.add(rdomujer);
+        rdomujer.setBounds(270, 290, 75, 36);
+
+        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.add(jDateChooser1);
+        jDateChooser1.setBounds(180, 460, 160, 36);
+
+        jLabel13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Todo");
+        jLabel13.setOpaque(true);
+        jPanel3.add(jLabel13);
+        jLabel13.setBounds(120, 10, 100, 36);
+
+        jLabel14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Datos");
+        jLabel14.setOpaque(true);
+        jPanel3.add(jLabel14);
+        jLabel14.setBounds(10, 10, 100, 36);
+        jPanel3.add(jSeparator1);
+        jSeparator1.setBounds(10, 50, 210, 10);
+
+        javax.swing.GroupLayout pnlsociosLayout = new javax.swing.GroupLayout(pnlsocios);
+        pnlsocios.setLayout(pnlsociosLayout);
+        pnlsociosLayout.setHorizontalGroup(
+            pnlsociosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlsociosLayout.createSequentialGroup()
+                .addGap(78, 78, 78)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(80, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(106, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(85, 85, 85)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(88, 88, 88))
+        pnlsociosLayout.setVerticalGroup(
+            pnlsociosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlsociosLayout.createSequentialGroup()
+                .addContainerGap(85, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 617, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
         );
+
+        jPanel1.add(pnlsocios, "card2");
+
+        pnlsocios1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Todo");
+        jLabel16.setOpaque(true);
+
+        jLabel15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("Datos");
+        jLabel15.setOpaque(true);
+
+        jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("Actividad: ");
+
+        cbolista.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un Entrenador" }));
+
+        btnbuscar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        btnbuscar.setText("Buscar");
+
+        tbllista.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Actividades"
+            }
+        ));
+        tbllista.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tbllista.setFillsViewportHeight(true);
+        tbllista.setGridColor(new java.awt.Color(0, 0, 0));
+        tbllista.setRowSelectionAllowed(false);
+        tbllista.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane1.setViewportView(tbllista);
+
+        jButton2.setBackground(new java.awt.Color(0, 153, 255));
+        jButton2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton2.setText("Siguiente");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(cbolista, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(87, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addComponent(cbolista, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnlsocios1Layout = new javax.swing.GroupLayout(pnlsocios1);
+        pnlsocios1.setLayout(pnlsocios1Layout);
+        pnlsocios1Layout.setHorizontalGroup(
+            pnlsocios1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlsocios1Layout.createSequentialGroup()
+                .addContainerGap(79, Short.MAX_VALUE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(78, 78, 78))
+        );
+        pnlsocios1Layout.setVerticalGroup(
+            pnlsocios1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlsocios1Layout.createSequentialGroup()
+                .addGap(106, 106, 106)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(pnlsocios1, "card3");
+
+        membresia.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setLayout(null);
+        jPanel2.add(jSeparator3);
+        jSeparator3.setBounds(10, 50, 210, 10);
+
+        jLabel17.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Todo");
+        jLabel17.setOpaque(true);
+        jPanel2.add(jLabel17);
+        jLabel17.setBounds(120, 10, 100, 36);
+
+        jLabel18.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("Datos");
+        jLabel18.setOpaque(true);
+        jPanel2.add(jLabel18);
+        jLabel18.setBounds(10, 10, 100, 36);
+
+        jLabel11.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("MEMBRESIAS");
+        jPanel2.add(jLabel11);
+        jLabel11.setBounds(94, 88, 507, 40);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Membresias"
+            }
+        ));
+        jTable1.setFillsViewportHeight(true);
+        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane2.setViewportView(jTable1);
+
+        jPanel2.add(jScrollPane2);
+        jScrollPane2.setBounds(94, 139, 507, 241);
+
+        jLabel12.setBackground(new java.awt.Color(51, 204, 0));
+        jLabel12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("<html>\nLOCKER<br> MESUAL<br>\n$50");
+        jLabel12.setOpaque(true);
+        jPanel2.add(jLabel12);
+        jLabel12.setBounds(220, 430, 100, 90);
+
+        jLabel19.setBackground(new java.awt.Color(0, 204, 0));
+        jLabel19.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("<html>\nVISITA AL DIA<br><br>\n        $50\n");
+        jLabel19.setOpaque(true);
+        jPanel2.add(jLabel19);
+        jLabel19.setBounds(100, 430, 100, 90);
+
+        jLabel22.setOpaque(true);
+        jPanel2.add(jLabel22);
+        jLabel22.setBounds(110, 440, 100, 90);
+
+        jLabel24.setBackground(new java.awt.Color(0, 204, 0));
+        jLabel24.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("<html>\nDANCE<br>\n$50");
+        jLabel24.setOpaque(true);
+        jPanel2.add(jLabel24);
+        jLabel24.setBounds(340, 430, 100, 90);
+
+        jLabel23.setOpaque(true);
+        jPanel2.add(jLabel23);
+        jLabel23.setBounds(230, 440, 100, 90);
+
+        jLabel20.setOpaque(true);
+        jPanel2.add(jLabel20);
+        jLabel20.setBounds(350, 440, 100, 90);
+
+        jLabel25.setBackground(new java.awt.Color(0, 204, 0));
+        jLabel25.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText("<html>\nINSCRIPCION\n<br>\n$100");
+        jLabel25.setOpaque(true);
+        jPanel2.add(jLabel25);
+        jLabel25.setBounds(470, 430, 100, 90);
+
+        jLabel21.setOpaque(true);
+        jPanel2.add(jLabel21);
+        jLabel21.setBounds(480, 440, 100, 90);
+
+        jLabel26.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel26.setText("Descuento $ ");
+        jPanel2.add(jLabel26);
+        jLabel26.setBounds(230, 550, 100, 40);
+
+        txttoal.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel2.add(txttoal);
+        txttoal.setBounds(550, 550, 110, 40);
+
+        jLabel27.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel27.setText("Total $ ");
+        jPanel2.add(jLabel27);
+        jLabel27.setBounds(460, 550, 80, 40);
+
+        txtpago.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel2.add(txtpago);
+        txtpago.setBounds(110, 550, 110, 40);
+
+        jLabel28.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel28.setText("Pago $ ");
+        jPanel2.add(jLabel28);
+        jLabel28.setBounds(20, 550, 80, 40);
+
+        txtdescuento.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel2.add(txtdescuento);
+        txtdescuento.setBounds(340, 550, 110, 40);
+
+        javax.swing.GroupLayout membresiaLayout = new javax.swing.GroupLayout(membresia);
+        membresia.setLayout(membresiaLayout);
+        membresiaLayout.setHorizontalGroup(
+            membresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(membresiaLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(79, Short.MAX_VALUE))
+        );
+        membresiaLayout.setVerticalGroup(
+            membresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(membresiaLayout.createSequentialGroup()
+                .addGap(107, 107, 107)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(membresia, "card4");
+
+        asistencias.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.setLayout(null);
+        jPanel4.add(jSeparator4);
+        jSeparator4.setBounds(10, 50, 210, 10);
+
+        jLabel29.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText("Todo");
+        jLabel29.setOpaque(true);
+        jPanel4.add(jLabel29);
+        jLabel29.setBounds(120, 10, 100, 36);
+
+        jLabel30.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("Datos");
+        jLabel30.setOpaque(true);
+        jPanel4.add(jLabel30);
+        jLabel30.setBounds(10, 10, 100, 36);
+
+        jLabel31.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setText("Lista de Asistencias");
+        jPanel4.add(jLabel31);
+        jLabel31.setBounds(94, 88, 507, 40);
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Asistencia"
+            }
+        ));
+        jTable2.setFillsViewportHeight(true);
+        jTable2.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane3.setViewportView(jTable2);
+
+        jPanel4.add(jScrollPane3);
+        jScrollPane3.setBounds(70, 200, 540, 330);
+
+        jLabel43.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel43.setText("Socio: ");
+        jPanel4.add(jLabel43);
+        jLabel43.setBounds(80, 140, 90, 40);
+
+        txtsocio.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jPanel4.add(txtsocio);
+        txtsocio.setBounds(170, 140, 200, 40);
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 204));
+        jButton1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton1.setText("Todo");
+        jPanel4.add(jButton1);
+        jButton1.setBounds(480, 140, 90, 40);
+
+        jButton3.setBackground(new java.awt.Color(0, 153, 204));
+        jButton3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton3.setText("Buscar");
+        jPanel4.add(jButton3);
+        jButton3.setBounds(380, 140, 90, 40);
+
+        javax.swing.GroupLayout asistenciasLayout = new javax.swing.GroupLayout(asistencias);
+        asistencias.setLayout(asistenciasLayout);
+        asistenciasLayout.setHorizontalGroup(
+            asistenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(asistenciasLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(79, Short.MAX_VALUE))
+        );
+        asistenciasLayout.setVerticalGroup(
+            asistenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(asistenciasLayout.createSequentialGroup()
+                .addGap(107, 107, 107)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(asistencias, "card4");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,12 +636,80 @@ public class Socios extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel asistencias;
+    private javax.swing.JButton btnbuscar;
+    private javax.swing.JButton btnsiguiente;
+    private javax.swing.JComboBox<String> cbolista;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JLabel lblcamara;
+    private javax.swing.JLabel lblcapturar;
+    private javax.swing.JLabel lblfoto;
+    private javax.swing.JPanel membresia;
+    private javax.swing.JPanel pnlsocios;
+    private javax.swing.JPanel pnlsocios1;
+    private javax.swing.JRadioButton rdoactivo;
+    private javax.swing.JRadioButton rdohombre;
+    private javax.swing.JRadioButton rdoinactivo;
+    private javax.swing.JRadioButton rdomujer;
+    private javax.swing.JTable tbllista;
+    private javax.swing.JTextField txtapellidos;
+    private javax.swing.JTextField txtclave;
+    private javax.swing.JTextField txtdescuento;
+    private javax.swing.JTextField txtdireccion;
+    private javax.swing.JTextField txtedad;
+    private javax.swing.JTextField txtnombre;
+    private javax.swing.JTextField txtpago;
+    private javax.swing.JTextField txtsocio;
+    private javax.swing.JTextField txttelefono;
+    private javax.swing.JTextField txttoal;
     // End of variables declaration//GEN-END:variables
 }
