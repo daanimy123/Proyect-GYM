@@ -96,6 +96,7 @@ public class Login extends javax.swing.JDialog {
         jButton1.setBackground(new java.awt.Color(255, 0, 49));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Cancelar");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -111,6 +112,7 @@ public class Login extends javax.swing.JDialog {
         jButton2.setBackground(new java.awt.Color(0, 204, 204));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Aceptar");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
