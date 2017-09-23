@@ -107,7 +107,7 @@ public class Socios extends javax.swing.JInternalFrame {
         setPreferredSize(new java.awt.Dimension(865, 500));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.CardLayout());
+        jPanel1.setLayout(new java.awt.GridBagLayout());
 
         pnlsocios.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -271,17 +271,17 @@ public class Socios extends javax.swing.JInternalFrame {
             .addGroup(pnlsociosLayout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlsociosLayout.setVerticalGroup(
             pnlsociosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlsociosLayout.createSequentialGroup()
-                .addContainerGap(85, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 617, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(68, 68, 68))
         );
 
-        jPanel1.add(pnlsocios, "card2");
+        jPanel1.add(pnlsocios, new java.awt.GridBagConstraints());
 
         pnlsocios1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -351,7 +351,7 @@ public class Socios extends javax.swing.JInternalFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(btnbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -382,7 +382,7 @@ public class Socios extends javax.swing.JInternalFrame {
         pnlsocios1Layout.setHorizontalGroup(
             pnlsocios1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlsocios1Layout.createSequentialGroup()
-                .addContainerGap(79, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(78, 78, 78))
         );
@@ -391,10 +391,10 @@ public class Socios extends javax.swing.JInternalFrame {
             .addGroup(pnlsocios1Layout.createSequentialGroup()
                 .addGap(106, 106, 106)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(pnlsocios1, "card3");
+        jPanel1.add(pnlsocios1, new java.awt.GridBagConstraints());
 
         membresia.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -524,17 +524,17 @@ public class Socios extends javax.swing.JInternalFrame {
             .addGroup(membresiaLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         membresiaLayout.setVerticalGroup(
             membresiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(membresiaLayout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(membresia, "card4");
+        jPanel1.add(membresia, new java.awt.GridBagConstraints());
 
         asistencias.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -608,23 +608,23 @@ public class Socios extends javax.swing.JInternalFrame {
             .addGroup(asistenciasLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         asistenciasLayout.setVerticalGroup(
             asistenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(asistenciasLayout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(asistencias, "card4");
+        jPanel1.add(asistencias, new java.awt.GridBagConstraints());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 3042, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

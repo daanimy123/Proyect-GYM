@@ -49,7 +49,7 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(15, 104, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(12, 33, 0, 0);
         jPanel4.add(jRadioButton3, gridBagConstraints);
 
         jRadioButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -64,7 +64,7 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(15, 39, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(12, 39, 0, 0);
         jPanel4.add(jRadioButton4, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -73,7 +73,7 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints.ipadx = 149;
         gridBagConstraints.ipady = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 104, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(18, 33, 0, 0);
         jPanel4.add(jTextField1, gridBagConstraints);
 
         jButton1.setBackground(new java.awt.Color(0, 102, 102));
@@ -86,18 +86,18 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(38, 137, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(38, 66, 0, 0);
         jPanel4.add(jButton1, gridBagConstraints);
 
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 4;
+        gridBagConstraints.gridheight = 5;
         gridBagConstraints.ipadx = 202;
         gridBagConstraints.ipady = 177;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(32, 91, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(40, 74, 0, 0);
         jPanel4.add(jLabel1, gridBagConstraints);
 
         jTextField2.setEditable(false);
@@ -113,10 +113,10 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.ipadx = 196;
+        gridBagConstraints.ipadx = 183;
         gridBagConstraints.ipady = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(32, 65, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(40, 68, 0, 0);
         jPanel4.add(jTextField2, gridBagConstraints);
 
         jButton2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -129,10 +129,10 @@ public class Home extends javax.swing.JInternalFrame {
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(57, 267, 81, 0);
+        gridBagConstraints.insets = new java.awt.Insets(57, 250, 73, 0);
         jPanel4.add(jButton2, gridBagConstraints);
 
         jButton3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -145,9 +145,9 @@ public class Home extends javax.swing.JInternalFrame {
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(57, 84, 81, 0);
+        gridBagConstraints.insets = new java.awt.Insets(57, 84, 73, 0);
         jPanel4.add(jButton3, gridBagConstraints);
 
         jButton4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
@@ -159,11 +159,11 @@ public class Home extends javax.swing.JInternalFrame {
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 8;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.ipadx = -13;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(57, 80, 81, 0);
+        gridBagConstraints.insets = new java.awt.Insets(57, 4, 73, 0);
         jPanel4.add(jButton4, gridBagConstraints);
 
         jTable2.setAutoCreateColumnsFromModel(false);
@@ -184,26 +184,28 @@ public class Home extends javax.swing.JInternalFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 6;
-        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.gridheight = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 358;
-        gridBagConstraints.ipady = 92;
+        gridBagConstraints.ipadx = 326;
+        gridBagConstraints.ipady = 100;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(30, 65, 0, 50);
+        gridBagConstraints.insets = new java.awt.Insets(30, 65, 0, 0);
         jPanel4.add(jScrollPane2, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 1034, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 928, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 446, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 454, Short.MAX_VALUE)
         );
 
         pack();
