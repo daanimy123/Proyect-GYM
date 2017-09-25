@@ -291,66 +291,26 @@ public class Instructor extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LFoto;
-    private javax.swing.JLabel LFoto1;
     private javax.swing.JLabel LFoto2;
-    private javax.swing.JButton TomarFoto;
-    private javax.swing.JButton TomarFoto1;
-    private javax.swing.JButton bntGuardar;
-    private javax.swing.JButton bntGuardar1;
-    private javax.swing.JSpinner edad;
-    private javax.swing.JSpinner edad1;
     private javax.swing.JSpinner edad2;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JTextField txtApel;
-    private javax.swing.JTextField txtApel1;
-    private javax.swing.JTextField txtClave;
-    private javax.swing.JTextField txtClave1;
     private javax.swing.JTextField txtClave2;
     private javax.swing.JTextField txtClave3;
     private javax.swing.JTextField txtClave4;
     private javax.swing.JTextField txtClave5;
     private javax.swing.JTextField txtClave6;
-    private javax.swing.JTextField txtDire;
-    private javax.swing.JTextField txtDire1;
-    private javax.swing.JTextField txtNom;
-    private javax.swing.JTextField txtNom1;
-    private javax.swing.JTextField txtTele;
-    private javax.swing.JTextField txtTele1;
     // End of variables declaration//GEN-END:variables
 }
