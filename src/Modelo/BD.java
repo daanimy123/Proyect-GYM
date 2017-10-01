@@ -5,9 +5,7 @@
  */
 package Modelo;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,24 +13,43 @@ import javax.swing.JOptionPane;
  * @author crack
  */
 public class BD {
-    protected static Connection getConnection(){
-        Connection conexion =null;
-        
-        try{
+
+    protected Connection con=null;
+    protected Statement pst = null;
+
+    public BD() {
+            
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            String servidor= "jdbc:mysql://localhost/Gym";
-            String usuarioBD="root";
-            String passwordDB="";
-            conexion = DriverManager.getConnection(servidor,usuarioBD,passwordDB);
-        }catch( ClassNotFoundException ex){
-            JOptionPane.showMessageDialog(null, ex, "Error 1 en la conexion con la BD "+ ex.getMessage(),JOptionPane.ERROR_MESSAGE);
-            conexion=null;
-        }catch(SQLException ex){
-            JOptionPane.showMessageDialog(null, ex, "Error 2 en la conexion con la BD"+ ex.getMessage(), JOptionPane.ERROR_MESSAGE);
-            conexion = null;
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gym", "root", "");
+        } catch (ClassNotFoundException ex) {
+            System.out.println(ex);
+        } catch (SQLException ex) {
+            System.out.println(ex);
         }
-        finally{
-            return conexion;
+    }
+
+    protected ResultSet consultar(String sql){
+        try {
+            pst = con.createStatement();
+            ResultSet rs = pst.executeQuery(sql);
+            return rs;
+        } catch (SQLException ex) {
+            System.out.println(ex);
+            return null;
+        }
+    }
+        
+
+    protected void insertar(String tabla, String campos, String valores) {
+        try {
+            pst = con.createStatement();
+            pst.executeUpdate("insert into " + tabla + " (" + campos + ") values(" + valores + ")");
+
+        } catch (SQLException ex) {
+            System.out.println(ex);
+
         }
     }
 }
+

@@ -5,6 +5,16 @@
  */
 package Vista;
 
+import Controlador.*;
+import java.awt.Component;
+import java.util.Vector;
+import javax.media.CaptureDeviceInfo;
+import javax.media.CaptureDeviceManager;
+import javax.media.Manager;
+import javax.media.MediaLocator;
+import javax.media.Player;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author crack
@@ -16,6 +26,27 @@ public class Socios extends javax.swing.JInternalFrame {
      */
     public Socios() {
         initComponents();
+        iniciarcamara();
+    }
+    Socio s = new Socio();
+
+    Player player;
+    Component c;
+
+    public void iniciarcamara() {
+        try {
+            Vector listadispo = CaptureDeviceManager.getDeviceList(null);
+
+            CaptureDeviceInfo dispositivo = CaptureDeviceManager.getDevice(listadispo.get(0).toString());
+            MediaLocator localizar = dispositivo.getLocator();
+            player = Manager.createRealizedPlayer(localizar);
+            player.start();
+            if ((c = player.getVisualComponent()) != null) {
+                lblfoto.add(c);
+            }
+        } catch (Exception e) {
+            System.err.println(e);
+        }
     }
 
     /**
@@ -28,6 +59,8 @@ public class Socios extends javax.swing.JInternalFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroupsexo = new javax.swing.ButtonGroup();
+        buttonGroupestado = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jDesktopPane1 = new javax.swing.JDesktopPane();
@@ -48,15 +81,15 @@ public class Socios extends javax.swing.JInternalFrame {
         txtedad = new javax.swing.JTextField();
         txtdireccion = new javax.swing.JTextField();
         txttelefono = new javax.swing.JTextField();
-        lblcamara = new javax.swing.JLabel();
-        lblcapturar = new javax.swing.JLabel();
-        lblfoto = new javax.swing.JLabel();
         btnsiguiente = new javax.swing.JButton();
         rdoactivo = new javax.swing.JRadioButton();
         rdoinactivo = new javax.swing.JRadioButton();
         rdohombre = new javax.swing.JRadioButton();
         rdomujer = new javax.swing.JRadioButton();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        lblfoto = new javax.swing.JPanel();
         jDesktopPane2 = new javax.swing.JDesktopPane();
         pnlsocios1 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
@@ -172,53 +205,41 @@ public class Socios extends javax.swing.JInternalFrame {
         jPanel3.add(txttelefono);
         txttelefono.setBounds(180, 300, 160, 36);
 
-        lblcamara.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblcamara.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblcamara.setText("Camara");
-        lblcamara.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.add(lblcamara);
-        lblcamara.setBounds(390, 30, 260, 220);
-
-        lblcapturar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblcapturar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblcapturar.setText("Capturar");
-        lblcapturar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.add(lblcapturar);
-        lblcapturar.setBounds(550, 280, 100, 40);
-
-        lblfoto.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        lblfoto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblfoto.setText("Tomar Foto");
-        lblfoto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.add(lblfoto);
-        lblfoto.setBounds(390, 280, 100, 40);
-
         btnsiguiente.setBackground(new java.awt.Color(0, 153, 255));
         btnsiguiente.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         btnsiguiente.setText("Siguiente");
         btnsiguiente.setToolTipText("Siguiente");
         btnsiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsiguienteActionPerformed(evt);
+            }
+        });
         jPanel3.add(btnsiguiente);
         btnsiguiente.setBounds(520, 350, 130, 50);
 
         rdoactivo.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroupestado.add(rdoactivo);
         rdoactivo.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         rdoactivo.setText("Activo");
         jPanel3.add(rdoactivo);
         rdoactivo.setBounds(190, 400, 75, 36);
 
         rdoinactivo.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroupestado.add(rdoinactivo);
         rdoinactivo.setText("Innactivo");
         jPanel3.add(rdoinactivo);
         rdoinactivo.setBounds(270, 400, 75, 36);
 
         rdohombre.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroupsexo.add(rdohombre);
         rdohombre.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         rdohombre.setText("Hombre");
         jPanel3.add(rdohombre);
         rdohombre.setBounds(190, 210, 75, 36);
 
         rdomujer.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroupsexo.add(rdomujer);
         rdomujer.setText("Mujer");
         jPanel3.add(rdomujer);
         rdomujer.setBounds(270, 210, 75, 36);
@@ -226,6 +247,32 @@ public class Socios extends javax.swing.JInternalFrame {
         jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jDateChooser1);
         jDateChooser1.setBounds(180, 350, 160, 36);
+
+        jButton1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton1.setText("Tomar Foto");
+        jPanel3.add(jButton1);
+        jButton1.setBounds(390, 280, 110, 40);
+
+        jButton3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jButton3.setText("Capturar");
+        jPanel3.add(jButton3);
+        jButton3.setBounds(540, 280, 110, 40);
+
+        lblfoto.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout lblfotoLayout = new javax.swing.GroupLayout(lblfoto);
+        lblfoto.setLayout(lblfotoLayout);
+        lblfotoLayout.setHorizontalGroup(
+            lblfotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 256, Short.MAX_VALUE)
+        );
+        lblfotoLayout.setVerticalGroup(
+            lblfotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 216, Short.MAX_VALUE)
+        );
+
+        jPanel3.add(lblfoto);
+        lblfoto.setBounds(390, 30, 260, 220);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -389,6 +436,7 @@ public class Socios extends javax.swing.JInternalFrame {
         jPanel2.add(jLabel19);
         jLabel19.setBounds(110, 280, 100, 90);
 
+        jLabel22.setBackground(new java.awt.Color(204, 204, 204));
         jLabel22.setOpaque(true);
         jPanel2.add(jLabel22);
         jLabel22.setBounds(120, 290, 100, 90);
@@ -401,10 +449,12 @@ public class Socios extends javax.swing.JInternalFrame {
         jPanel2.add(jLabel24);
         jLabel24.setBounds(350, 280, 100, 90);
 
+        jLabel23.setBackground(new java.awt.Color(204, 204, 204));
         jLabel23.setOpaque(true);
         jPanel2.add(jLabel23);
         jLabel23.setBounds(240, 290, 100, 90);
 
+        jLabel20.setBackground(new java.awt.Color(204, 204, 204));
         jLabel20.setOpaque(true);
         jPanel2.add(jLabel20);
         jLabel20.setBounds(360, 290, 100, 90);
@@ -417,6 +467,7 @@ public class Socios extends javax.swing.JInternalFrame {
         jPanel2.add(jLabel25);
         jLabel25.setBounds(480, 280, 100, 90);
 
+        jLabel21.setBackground(new java.awt.Color(204, 204, 204));
         jLabel21.setOpaque(true);
         jPanel2.add(jLabel21);
         jLabel21.setBounds(490, 290, 100, 90);
@@ -504,12 +555,45 @@ public class Socios extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
+        if (txtapellidos.getText().equals("") || txtclave.getText().equals("") || txtdireccion.getText().equals("")
+                || txtedad.getText().equals("") || txtnombre.getText().equals("") || txttelefono.getText().equals("") ) {
+            JOptionPane.showMessageDialog(null, "Rellene todos los campos", "Faltan datos", JOptionPane.ERROR_MESSAGE);
+        } else {
+            if (rdohombre.isSelected() || rdomujer.isSelected()) {
+                if (rdoactivo.isSelected() || rdoinactivo.isSelected()) {
+                    boolean b;
+                    if (rdomujer.isSelected()) {
+                        b = false;
+                    }else{
+                        b= true;
+                    }
+                    boolean a;
+                    if (rdoactivo.isSelected()) {
+                        a = true;
+                    }else{
+                        a = false;
+                    }
+                    s.registrarsocio(Integer.parseInt(txtclave.getText()), txtnombre.getText(), txtapellidos.getText(), Integer.parseInt(txtedad.getText()), b, "Titulo Foto", txtdireccion.getText(), a);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Seleccione un Estado", "Faltan Seleccionar Estado", JOptionPane.ERROR_MESSAGE);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Seleccione su Genero", "Faltan Seleccionar Genero", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_btnsiguienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnsiguiente;
+    private javax.swing.ButtonGroup buttonGroupestado;
+    private javax.swing.ButtonGroup buttonGroupsexo;
     private javax.swing.JComboBox<String> cbolista;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JDesktopPane jDesktopPane2;
@@ -544,9 +628,7 @@ public class Socios extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JLabel lblcamara;
-    private javax.swing.JLabel lblcapturar;
-    private javax.swing.JLabel lblfoto;
+    private javax.swing.JPanel lblfoto;
     private javax.swing.JPanel membresia;
     private javax.swing.JPanel pnlsocios;
     private javax.swing.JPanel pnlsocios1;
