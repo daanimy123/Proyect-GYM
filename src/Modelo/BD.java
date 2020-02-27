@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author crack
+ * @author 
  */
 public class BD {
 
